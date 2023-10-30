@@ -112,7 +112,7 @@ window.addEventListener('wheel', function(e) {
 		e.preventDefault()
 		scrollPageMove(e)
 		btnClassAdd()
-	}, {passive: false}
+	}
 )
 
 window.addEventListener('load' , function () {
