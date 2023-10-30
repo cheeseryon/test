@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css); 
+
+html {font-size: 0.625em;}
+body {font-family: "pretendard",sans-serif; font-size: 1.6rem;}
+* {box-sizing: border-box;}
+#wrap {overflow: hidden;}
+
+.leftArea {position:fixed; top:20px; left:20px; width:15%; min-width:260px; height:calc(100% - 40px); display: flex; justify-content: center; align-items: start; z-index: 100;}
+.leftArea ul {width:100%; height: 100%; margin-top: 2.5em ;z-index: 100;}
+.leftArea ul li {width:100%; height:40px; padding-left: 1.875em; line-height: 40px; margin: 1.25em 0;}
+.leftArea ul li a {position: relative; left:0; display: block; padding-left:16px;font-size: 18px; transition: 0.3s; color:#666; font-weight: 500; overflow: hidden;}
+.leftArea ul li a:before {content:''; position: absolute; top:48%; left:-14px; transform:translateY(-50%) ;width:10px; height:4px; background: #353535;  transition:0.3s}
+.leftArea ul li a.active {left:10px; color:#111;}
+.leftArea ul li a.active:before {left:0px}
+.leftArea .leftBg {position: absolute; width:100%;  height:100%; margin: 0 auto; background: #fff; opacity: 0.8;}
+
+.rightArea {width:100%;}
+.rightArea > div {height: 100vh;}
+.rightArea .page .pageBg {width:85%; height:100%; float:right;  display: flex; justify-content: center; align-items: center;}
+
+.site .content {position: relative; width:85%; height:45%; display: flex;}
+.site .content .text {display: flex; width: 45%; padding:1.25em; color:#fff}
+
+.site .content .text h3 {font-size: 5rem;}
+.site .content .text h3 span {display: inline-block; margin-left:0.2em; font-size: 3rem;}
+.site .content .text li {font-size: 3.6rem; margin-top: 0.5em;}
+.site .content .text li.info {font-size: 2.4rem; margin-top: 1.666em;}
+
+.site .content .text li.iconArea span {display: inline-block; width:50px; height: 50px;}
+.site .content .text li.iconArea span img {width: 100%; height: 100%; border-radius:5px;}
+.site .content .text li.iconArea span.kakaoIcon {position: relative; top:2px;}
+.site .content .text li.iconArea span.kakaoIcon img {border:1px solid #5f5f5f;}
+.site .content .text .link {margin-top: 2.5em;}
+.site .content .text .link a {display: inline-block; padding: 0.75em 1.5em; border:1px solid #fff; font-size: 1.6rem; font-weight: 500; transition:0.1s}
+
+.site .content .imgBox {width:55%; height:100%; border-radius:4px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.24) 0px 30px 30px;}
+.site .content .imgBox a {display:block; width: 100%; height: 100%;}
+.site .content .imgBox a img {width:100%; height:100%;}
+
+
+/* home  */
+#home {position: relative; background: url(../img/homeBg1.png) no-repeat center/cover;} 
+#home h1 {font-size: 6rem; color:#ffffff}
+#home h1 span {color:#353535; font-weight: 800;}
+#home .content {position: relative; width:80%; height:25%;}
+#home .content h2 {position: absolute; left:0; bottom:0;}
+
+/* escape */
+#escape {background: url(../img/escapeBg02.png) no-repeat center/cover;} 
+#escape .content .link a:hover {background: #fff; color:#2969c9;}
+
+/* forena */
+#forena {background: url(../img/forenaBg02.png) no-repeat center/cover;} 
+#forena .content .link a:hover {background: #fff; color:#d0bcdf;}
+
+/* ks */
+#ks {background: url(../img/ksBg02.png) no-repeat center/cover;} 
+#ks .content .link a:hover {background: #fff; color:#774229;}
+
+/* micro */
+#micro {background: url(../img/microBg02.png) no-repeat center/cover;} 
+#micro .content .link a:hover {background: #fff; color:#35afc0;}
+
+/* kakao */
+#kakao {background: url(../img/kakaoBg04.png) no-repeat center/cover;} 
+#kakao .content .link a:hover {background: #fff; color:#f1d100;}
+
+/* footer */
+#footer {background: url(../img/homeBg1.png) no-repeat center/cover;} 
+#footer .content {width:80%;}
+#footer p {line-height:2; ;font-size: 2.4rem; font-weight: 500;}
+#footer p a {display: inline-block; margin-top: 2em; padding:0.25em 1em; border:1px solid #353535; font-size:1.8rem; transition: 0.1s;}
+#footer p a:hover {color:#fff; background: #353535;}
