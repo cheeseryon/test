@@ -76,11 +76,14 @@ function touchEvent () {
 				if(index < pageSection.length - 1) {
 					index ++
 				}
-			} else {
+			} else if (startScreenY < endScreenY) {
 				if(index > 0)
 				index --
 			}
-			console.log(index)
+
+			console.log(startScreenY)
+			console.log(endScreenY)
+
 			let filteredPage = pageSection.filter((item , idx) => idx < index)
 			let totalHieght = filteredPage.reduce((accumulator,currentHeight) => {
 				return accumulator + currentHeight.clientHeight
