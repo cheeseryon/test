@@ -67,16 +67,16 @@ let endScreenY;
 
 function touchEvent () {
 	document.body.addEventListener('touchstart', (e) => {
-	startScreenY = e.changedTouches[0].screenY;
+	startScreenY = e.changedTouches[0].clientY;
 	});
 	document.body.addEventListener('touchend', (e) => {
-		endScreenY = e.changedTouches[0].screenY;
+		endScreenY = e.changedTouches[0].clientY;
 		if(scrolling) {
-			if(startScreenY > endScreenY) {
+			if(startScreenY > endScreenY + 100) {
 				if(index < pageSection.length - 1) {
 					index ++
 				}
-			} else if (startScreenY < endScreenY) {
+			} else if (startScreenY + 100 < endScreenY) {
 				if(index > 0)
 				index --
 			}
