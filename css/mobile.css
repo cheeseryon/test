@@ -4,9 +4,10 @@
 @media screen and (min-width:981px) and (max-width:1400px) {
     .min1400 {display: none;}
     .max1400 {display: block;}
-
     .min980 {display: block;}
     .max980 {display: none;}
+    .min680 {display: block;}
+    .max680 {display: none;}
 
     .leftArea {max-width:220px;}
     .leftArea ul li {padding-left: 0.625em;}
@@ -33,6 +34,8 @@
     .max1400 {display: block;}
     .min980 {display: none;}
     .max980 {display: block;}
+    .min680 {display: block;}
+    .max680 {display: none;}
 
     .moblieGnb {display:block;}
     .closeBtn {display:block;}
@@ -67,11 +70,13 @@
     #footer .content span.git a {font-size: 1.4rem;}
 }
 
-@media screen and (min-width:413px) and (max-width:680px) {
+@media screen and (max-width:680px) {
     .min1400 {display: none;}
     .max1400 {display: block;}
     .min980 {display: none;}
     .max980 {display: block;}
+    .min680 {display: none;}
+    .max680 {display: block;}
 
     .moblieGnb {display:block;}
     .closeBtn {display:block;}
@@ -100,7 +105,7 @@
     .site .content .imgBox {width:100%; margin: 2.5em auto 2em;}
 
     #home {background: url(../img/homeBg_modify02.png) no-repeat left bottom;}
-    #home h1 {font-size: 4.4rem;}
+    #home h1 {font-size: 4.4rem; text-align: center;}
     #footer {background: url(../img/homeBg_modify02.png) no-repeat left bottom;}
     #footer .content p {font-size: 1.6rem;}
     #footer .content span.git a {font-size: 1.3rem;}

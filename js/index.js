@@ -2,6 +2,7 @@
 let pageMoveBtn = Array.from(document.querySelectorAll('.pageMoveBtn'))
 let pageSection = Array.from(document.querySelectorAll('.page'))
 let index = 0
+
 function btnClickPageMove () {
 	for(let i = 0; i < pageMoveBtn.length; i++) {
 		pageMoveBtn[i].addEventListener('click' , function(e) {
