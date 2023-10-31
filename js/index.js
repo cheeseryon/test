@@ -29,9 +29,9 @@ btnClickPageMove()
 
 
 /* 스크롤시 섹션이동 기능 */
-let scrolling = true;
+
 function scrollPageMove(e) {
-	if(scrolling) {
+	
 		if(e.deltaY > 0){
 			if(index < pageSection.length - 1) {
 				index ++
@@ -52,12 +52,7 @@ function scrollPageMove(e) {
 			pageSection[i].classList.remove('active')
 		}
 		pageSection[index].classList.add('active')
-
-		scrolling = false;
-		setTimeout(() => {
-			scrolling = true
-		}, 600)
-	}
+	
 }
 
 
